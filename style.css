@@ -2,9 +2,50 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family:'poppins' , sans-serif ;
+    font-family: 'poppins' , sans-serif;
 }
 
 body {
     color: #ededed;
 }
+
+/*Header Section Code*/
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100; /*position eka fixed nisa anith ewata wehila yana nisa*/
+}
+
+.logo {
+    position: relative;
+    font-size: 25px;
+    color: #00eeff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.logo:hover{
+    transform: scale(1.15);
+}
+
+.navbar a {
+    display: inline-block;
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .2s;
+
+}
+
+.navbar a:hover{
+    color:#00eeff;
+}
+
