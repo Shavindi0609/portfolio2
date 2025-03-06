@@ -14,19 +14,19 @@ body {
 /*Header Section Code*/
 .header {
     position: fixed;
-    top: 0;
+    top: 0px;
     left: 0;
     width: 100%;
     padding: 20px 10%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 100; /*position eka fixed nisa anith ewata wehila yana nisa*/
+    z-index: 1000; /*position eka fixed nisa anith ewata wehila yana nisa*/
 }
 
 .logo {
     position: relative;
-    font-size: 25px;
+    font-size: 30px;
     color: #00eeff;
     text-decoration: none;
     font-weight: 600;
@@ -71,6 +71,8 @@ body {
     color: #0ef;
     text-decoration: none;
     font-weight: 600;
+    transition: 0.3s ease;
+
 }
 
 .logo:hover{
@@ -97,7 +99,7 @@ body {
     width: 100%;
     justify-content: space-between;
     height: 100vh;
-    background: #002244;
+    background: #002030;
     background-size: cover;
     background-position: center;
     display: flex;
@@ -126,6 +128,10 @@ body {
     font-size: 20px;
 }
 
+.home-social {
+    display: flex;
+}
+
 .home-social a {
     display: flex;
     justify-content: center;
@@ -139,11 +145,13 @@ body {
     color: #0ef;
     text-decoration: none;
     margin: 30px 15px 30px 0;
+    transition: 0.3s ease;
 }
 
 .home-social a:hover {
+    transform: scale(1.2) translateY(-10px);
     background: #0ef;
-    color: #081b29;
+    color: #002030;
     box-shadow: 0 0 5px #00eeff;
 }
 
@@ -153,8 +161,25 @@ body {
     background: #00eeff;
     border-radius: 40px;
     font-size: 16px;
-    color: #081b29;
+    color: #002030;
     letter-spacing: 1px;
     text-decoration: none;
     font-weight: 600;
+    transition: 0.3s ease;
 }
+
+.btn:hover {
+    box-shadow: 0 0 1.6rem #00eeff;
+    /*box-shadow: 0 0 5px cyan,*/
+    /*0 0 25px cyan, 0 0 50px cyan,*/
+    /*0 0 100px cyan, 0 0 200px cyan*/
+}
+
+.home-img img{
+    width: 25vw;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #00eeff;
+    transition: 0.4s ease;
+}
+
+
